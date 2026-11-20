@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ivory-canvas: #faf7f2;
+    --linen-surface: #f2ece1;
+    --card-surface: #ffffff;
+    --indigo-primary: #1e2a4a;
+    --indigo-deep: #141d36;
+    --terracotta-accent: #c2593f;
+    --terracotta-dark: #a6462f;
+    --ink-primary: #1b1f2a;
+    --ink-muted: #565b69;
+    --border-hairline: rgba(30, 42, 74, 0.12);
+  }
+
+  html {
+    background-color: var(--ivory-canvas);
+    color: var(--ink-primary);
+    font-family:
+      "Plus Jakarta Sans",
+      "Noto Sans Telugu",
+      "Noto Sans Devanagari",
+      "Noto Sans Kannada",
+      system-ui,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--ivory-canvas);
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family:
+      "Fraunces",
+      "Noto Sans Telugu",
+      "Noto Sans Devanagari",
+      "Noto Sans Kannada",
+      Georgia,
+      serif;
+    text-wrap: balance;
+  }
+
+  .font-mono-num {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle handloom warp-and-weft texture on ivory canvas */
+.bg-woven-ivory {
+  background-color: #faf7f2;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(30, 42, 74, 0.025) 0px,
+      rgba(30, 42, 74, 0.025) 1px,
+      transparent 1px,
+      transparent 10px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(194, 89, 63, 0.022) 0px,
+      rgba(194, 89, 63, 0.022) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+}
+
+.bg-woven-indigo {
+  background-color: #1e2a4a;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(194, 89, 63, 0.05) 0px,
+      rgba(194, 89, 63, 0.05) 1px,
+      transparent 1px,
+      transparent 8px
+    );
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

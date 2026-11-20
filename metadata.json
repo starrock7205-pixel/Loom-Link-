@@ -1,0 +1,10 @@
+{
+  "name": "LoomLink",
+  "description": "Voice-first, zero-hallucination agentic commerce platform for rural Indian handloom weavers in Gadwal and Narayanpet.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
